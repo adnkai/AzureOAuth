@@ -14,10 +14,10 @@ https://docs.microsoft.com/de-de/aspnet/core/security/authentication/social/?vie
 
 
 Für AzureAD muss in der App Registrierung als RedirectUri
-> https://localhost:`<IIS-SSL-Port>`/signin-oidc
+> https://localhost:&lt;IIS-SSL-Port&gt;/signin-oidc
 
 Als Logout-URI
-> https://localhost:`<IIS-SSL-Port>`/signout-oidc
+> https://localhost:&lt;IIS-SSL-Port&gt;/signout-oidc
 eingetragen werden.
 
 Im Code müssen wir außerdem das Cookie-Scheme anpassen:
