@@ -42,11 +42,8 @@ namespace MultiWebApp
                         options.CookieSchemeName = IdentityConstants.ExternalScheme;
                     })
                 .AddTwitter(twitterOptions => {Configuration.Bind("Authentication:Twitter", twitterOptions);});
-
-            // services.AddAuthentication()
-            //         .AddAzureAD(options => {Configuration.Bind("Authentication:AzureAd", options);})
-            //         .AddTwitter(twitterOptions => {Configuration.Bind("Authentication:Twitter", twitterOptions);})
-            //         .AddCookie(options => {
+            
+            // .AddCookie(options => {
             //             options.LoginPath = "/Index/";
             //             options.AccessDeniedPath = "/Account/Forbidden/";
             //     })
