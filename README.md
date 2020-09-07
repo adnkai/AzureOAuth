@@ -15,6 +15,7 @@ https://docs.microsoft.com/de-de/aspnet/core/security/authentication/social/?vie
 
 Für AzureAD muss in der App Registrierung als RedirectUri
 > https://localhost:<IIS-SSL-Port>/signin-oidc
+
 Als Logout-URI
 > https://localhost:<IIS-SSL-Port>/signout-oidc
 eingetragen werden.
@@ -25,3 +26,22 @@ Im Code müssen wir außerdem das Cookie-Scheme anpassen:
 >                        Configuration.Bind("Authentication:AzureAd", options);
 >                        options.CookieSchemeName = IdentityConstants.ExternalScheme;
 >                    })
+
+
+Microsoft-Sign-In
+> https://docs.microsoft.com/de-de/aspnet/core/security/authentication/social/microsoft-logins?view=aspnetcore-3.1
+
+Login-Einschränkungen nach Schema
+> https://docs.microsoft.com/de-de/aspnet/core/security/authorization/limitingidentitybyscheme?view=aspnetcore-3.1
+
+Web-App Sign-In Konfigurationsdatei
+> https://docs.microsoft.com/de-de/azure/active-directory/develop/scenario-web-app-sign-user-app-configuration?tabs=aspnetcore
+
+Microsoft Identity Platform
+> https://docs.microsoft.com/de-de/azure/active-directory/develop/sample-v2-code
+
+Microsoft Authentication Flows
+> https://docs.microsoft.com/de-de/azure/active-directory/develop/authentication-flows-app-scenarios#scenarios-and-supported-authentication-flows
+
+Single-Page Application
+> https://docs.microsoft.com/de-de/azure/active-directory/develop/scenario-spa-overview
