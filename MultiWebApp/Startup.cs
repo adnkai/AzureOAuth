@@ -15,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.AzureAD.UI;
 using Microsoft.AspNetCore.Authentication.Twitter;
+using Microsoft.AspNetCore.Authentication.Google;
 namespace MultiWebApp
 {
     public class Startup
@@ -43,8 +44,11 @@ namespace MultiWebApp
                         options.CookieSchemeName = IdentityConstants.ExternalScheme;
                     })
                 .AddTwitter(twitterOptions => {
-                    Configuration.Bind("Authentication:Twitter", twitterOptions);
-                    });
+                        Configuration.Bind("Authentication:Twitter", twitterOptions);
+                    })
+                .AddGoogle(googleOptions => {
+                        Configuration.Bind("Authentication:Google", googleOptions);
+                });
             
             // .AddCookie(options => {
             //             options.LoginPath = "/Index/";

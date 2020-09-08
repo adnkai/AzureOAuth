@@ -16,7 +16,6 @@ namespace DeviceCodeAuth
             IConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
             configurationBuilder.AddJsonFile(@"C:\Users\Kai.Roth\Documents\Workshops\OAuth2.0\AzureOAuth\DeviceCodeAuth\appsettings.json");
             Configuration = configurationBuilder.Build();
-            Console.WriteLine(Configuration["ClientId"]);
 
             app = ConfidentialClientApplicationBuilder.Create(Configuration["ClientId"])
                 .WithClientSecret(Configuration["ClientSecret"])
