@@ -45,3 +45,7 @@ Microsoft Authentication Flows
 
 Single-Page Application
 > https://docs.microsoft.com/de-de/azure/active-directory/develop/scenario-spa-overview
+
+Labs
+> https://docs.microsoft.com/en-us/samples/azure-samples/active-directory-aspnetcore-webapp-openidconnect-v2/enable-webapp-signin/
+

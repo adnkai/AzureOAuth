@@ -21,7 +21,7 @@ namespace DeviceCodeAuth
                 .WithClientSecret(Configuration["ClientSecret"])
                 .WithAuthority(new Uri(Configuration["Authority"]))
                 .Build();
-            var scopes = new [] {Configuration["ResourceId"]};
+            var scopes = new [] {Configuration["ResourceId"], "Test"};
             AuthenticationResult result = null;
             try
             {
